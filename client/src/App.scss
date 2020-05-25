@@ -13,7 +13,9 @@ html{
   display: flex;
   flex-direction: column;
   height: 100%;
+  color:#1d1d1b;
 }
+
 .main{
   /* 1 flex-grow, 0 flex-shrink, auto flex-basis */
   flex: 1 0 auto;
