@@ -1,0 +1,36 @@
+.footer{
+  display: flex;
+  flex-direction: column;
+  background-color: #1d1d1b;
+  padding: 10px;
+  margin-top: 50px;
+  margin-bottom: 0;
+  align-items: center;
+}
+
+.socials {
+  display: flex;
+  width:200px;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+.icon-social{
+  text-decoration: none;
+  color:#fff;
+  font-size: 20px;
+  &:hover{
+    color:#65a15a;
+    transition: color 300ms;
+  }
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+
+}
+.footer-copyright{
+  color:#fff;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}

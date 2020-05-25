@@ -1,0 +1,111 @@
+.product-inCart-item {
+  box-sizing: border-box;
+  max-width: 100%;
+  min-width: 1px;
+  margin-bottom: 10px;
+  display: flex;
+  border:1px solid rgba(233, 233, 233, 0.5);
+  border-radius: 10px;
+  padding:10px;
+  box-shadow: -2px -2px 6px rgba(255 ,255, 255, 1),
+  2px 2px 6px rgba(0 ,0, 0, 0.2);
+  align-items: center;
+  justify-content: space-around;
+}
+.product-inCart-info {
+  font-size: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 5px;
+}
+
+.product-inCart-counter{
+  padding: 0 5px;
+  font-size: 15px;
+}
+.product-inCart-item:hover {
+  box-shadow: inset -2px -2px 3px rgba(255 ,255, 255, 1),
+  inset 2px 2px 6px rgba(0 ,0, 0, 0.2);
+}
+.product-inCart-img {
+ width:50px;
+  margin: 0 10px;
+}
+.product-inCart-title {
+  color:#65a15a;
+  font-size: 16px;
+  word-wrap: break-word;
+  margin: 0;
+  font-weight: 600;
+  width:100px;
+}
+.product-inCart-btns {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-around;
+}
+
+.product-inCart-amount-control{
+  padding: 0 5px;
+}
+.product-inCart-amount{
+  padding: 5px;
+}
+.icon-container {
+  width:20px;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-right: 10px;
+}
+
+.icon-star {
+  width:100%;
+  cursor: pointer;
+  transition: fill 200ms;
+  &:hover {
+    fill: rgb(37, 75, 37);
+  }
+}
+
+.icon--checked{
+  width:100%;
+  cursor: pointer;
+  fill: #65a15a;
+}
+
+.product-inCart-amount-control{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+@media screen and (max-width: 1081px){
+  .product-inCart-info, .product-inCart-counter{
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px){
+  .product-inCart-info, .product-inCart-counter{
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px){
+  .product-inCart-item{
+    padding: 5px;
+  }
+  .cart-full .btn {
+    font-size: 8px;
+    padding:5px;
+    & .icon{
+      width: 8px;
+    }
+  }
+  .product-inCart-title{
+    font-size: 13px;
+  }
+  .product-inCart-img{
+    margin: 0;
+  }
+}
