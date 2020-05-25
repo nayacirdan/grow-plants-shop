@@ -42,9 +42,9 @@ export const toggleFavourite=(product)=>(dispatch)=>{
 
 export const fetchProducts=()=>(dispatch)=>{
     debugger;
-    axios('/product_items.json')
+    axios('/products')
         .then(result => {
-            dispatch({type:ActionsConst.FETCH_PRODUCTS, payload:result.data});
+            dispatch({type:ActionsConst.FETCH_PRODUCTS, payload:result.data.data});
         });
 }
 

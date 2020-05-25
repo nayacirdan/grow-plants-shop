@@ -1,0 +1,1 @@
+web: npm install --prefix server; npm install --prefix client; npm run build --prefix client; rm -rf server/public/*; cp -a client/build/. server/public/; npm start
